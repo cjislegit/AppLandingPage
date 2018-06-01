@@ -9,6 +9,9 @@
     <title>App Landing Page</title>
 </head>
 <body>
+
+  <!--Navbar-->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">MyApp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -33,22 +36,61 @@
       </form>
     </div>
   </nav>
-  <div class="jumbotron">
+
+  <!-- jumbotron -->
+
+  <div id="jumbotron" class="jumbotron">
     <h1 class="display-4">My Awesome App!</h1>
     <p class="lead">This is why YOU should download this fantastic app!</p>
     <hr class="my-4">
     <p>Want to know more? Join our mailing list!</p>
     <form class="form-inline">
-      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-      <div class="input-group mb-2 mr-sm-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text">@</div>
+      <div class="form-group">
+        <label for="email" class="sr-only">Email Address</label>
+        <div class="input-group">
+          <div class="input-group-addon">@</div>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
         </div>
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
       </div>
-      <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
   </div>
+
+  <!--Cards-->
+
+  <div class="container">
+    <div class="card">
+      <img src="/resources/aperture-vintage-339839-unsplash.jpg" alt="Night sky over the woods" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/resources/jack-cain-340089-unsplash.jpg" alt="Pink sky over a river" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/resources/janfillem-616217-unsplash.jpg" alt="Land Rover in the woods" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+
+  <footer class="footer">
+    <div class="container">
+      <h6>Download the App!</h6>
+      <p>Really,why should I download this app?</p>
+      <img src="/resources/App-Store-Icon.png" alt="App Store" id="appStore"> 
+    </div>
+  </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
