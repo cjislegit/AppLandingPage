@@ -1,4 +1,35 @@
+body {
+    position: relative;
+  }
+
+div{
+    display: block;
+}
+
+#about{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 #jumbotron{
     text-align: center;
 }
 
+#appStore{
+    width: 200px;
+    height:69.250px;
+}
+
+#footer{
+    background-color: #00FFFF;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cardImage{
+    height: 180px;
+    width: 100%;
+}
