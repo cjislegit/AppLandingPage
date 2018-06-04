@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <title>App Landing Page</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
 
   <!--Navbar-->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
     <a class="navbar-brand" href="#">MyApp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
     <div class="collapse navbar-collapse" id="nabrSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a href="#" class="nav-link">Home</a>
+          <a href="#jumbotron" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Download The App</a>
+          <a href="#footer" class="nav-link">Download The App</a>
         </li>
       </ul>
       <form action="" class="form-inline my-2 my-lg-0">
@@ -44,50 +44,67 @@
     <p class="lead">This is why YOU should download this fantastic app!</p>
     <hr class="my-4">
     <p>Want to know more? Join our mailing list!</p>
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="email" class="sr-only">Email Address</label>
-        <div class="input-group">
-          <div class="input-group-addon">@</div>
-          <input type="email" class="form-control" id="email" placeholder="Your Email">
+    <form class="d-flex justify-content-center">
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label for="inLineFormInputGroup" class="sr-only">Username</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
+  </div>
+
+  <!--About-->
+
+  <div class="container" id="about" >
+    <h1>Why This App Is Awesome</h1>
+    <p class="lead">Summary, once again, of your app's awesomeness</p>
   </div>
 
   <!--Cards-->
 
   <div class="container">
-    <div class="card">
-      <img src="/resources/aperture-vintage-339839-unsplash.jpg" alt="Night sky over the woods" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="/resources/jack-cain-340089-unsplash.jpg" alt="Pink sky over a river" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="/resources/janfillem-616217-unsplash.jpg" alt="Land Rover in the woods" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+        <div class="card">
+          <img src="/resources/aperture-vintage-339839-unsplash.jpg" alt="Night sky over the woods" class="card-img-top cardImage">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/resources/jack-cain-340089-unsplash.jpg" alt="Pink sky over a river" class="card-img-top cardImage">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/resources/janfillem-616217-unsplash.jpg" alt="Land Rover in the woods" class="card-img-top cardImage">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!--Footer-->
 
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
-      <h6>Download the App!</h6>
-      <p>Really,why should I download this app?</p>
+      <h2>Download the App!</h2>
+      <p class="lead">Really,why should I download this app?</p>
       <img src="/resources/App-Store-Icon.png" alt="App Store" id="appStore"> 
     </div>
   </footer>
